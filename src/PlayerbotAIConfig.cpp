@@ -473,6 +473,8 @@ bool PlayerbotAIConfig::Initialize()
 
     selfBotLevel = sConfigMgr->GetOption<int32>("AiPlayerbot.SelfBotLevel", 1);
 
+    summonDelay = sConfigMgr->GetOption<uint32>("AiPlayerbot.SummonDelay", 15);
+
     RandomPlayerbotFactory::CreateRandomBots();
     if (World::IsStopped())
     {
@@ -634,7 +636,7 @@ void PlayerbotAIConfig::loadWorldBuf(uint32 factionId1, uint32 classId1, uint32 
     if (maxLevel1 == 0 && minLevel1 == 0)
     {
         std::ostringstream os;
-        os << "AiPlayerbot.WorldBuff." << factionId1 << "." << factionId1 << "." << classId1;
+        os << "AiPlayerbot.WorldBuff." << factionId1 << "." << classId1 << "." << classId1;
 
         LoadList<std::vector<uint32>>(sConfigMgr->GetOption<std::string>(os.str().c_str(), "", false), buffs);
 

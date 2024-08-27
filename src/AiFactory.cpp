@@ -752,7 +752,7 @@ Engine* AiFactory::createDeadEngine(Player* player, PlayerbotAI* const facade, A
     return deadEngine;
 }
 
-uint8 AiFactory::GetPlayerSpecRole(Player* player)
+/*static*/ uint8 AiFactory::GetPlayerSpecRole(Player* player)
 {
     // Implement logic to determine the player's role based on their spec and gear
     // Return BOT_ROLE_TANK, BOT_ROLE_HEALER, or BOT_ROLE_DPS

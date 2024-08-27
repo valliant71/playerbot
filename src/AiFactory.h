@@ -32,6 +32,7 @@ public:
     static std::map<uint8, uint32> GetPlayerSpecTabs(Player* player);
     static BotRoles GetPlayerRoles(Player* player);
     static std::string GetPlayerSpecName(Player* player);
+    static uint8 GetPlayerSpecRole(Player* player);
 };
 
 #endif

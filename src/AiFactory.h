@@ -34,8 +34,8 @@ public:
     static std::string GetPlayerSpecName(Player* player);
     static uint8 GetPlayerSpecRole(Player* player);
 
-    // Update this line to match the definition in the .cpp file
-    static uint8 GetPlayerSpecRole(Player* player);
+    // Remove the duplicate line:
+    // static uint8 GetPlayerSpecRole(Player* player);
 };
 
 #endif

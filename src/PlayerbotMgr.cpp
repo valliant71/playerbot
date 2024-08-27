@@ -28,6 +28,8 @@
 #include "WorldSession.h"
 #include "ChannelMgr.h"
 #include "BroadcastHelper.h"
+#include "Config.h"
+#include <map>
 
 PlayerbotHolder::PlayerbotHolder() : PlayerbotAIBase(false) {}
 class PlayerbotLoginQueryHolder : public LoginQueryHolder

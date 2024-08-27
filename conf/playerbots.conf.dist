@@ -140,6 +140,10 @@ AiPlayerbot.InviteChat = 0
 # Bots will be summoned to player when accept group invitation
 AiPlayerbot.SummonWhenGroup = 1
 
+# Delay in seconds before summoning a bot after joining a group
+# Default: 15
+AiPlayerbot.SummonDelay = 15
+
 # Added following config
 # Selfbot permission level (0 = disabled, 1 = gm only (default), 2 = all players, 3 = activate on login)
 AiPlayerbot.SelfBotLevel = 1

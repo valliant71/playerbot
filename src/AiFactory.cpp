@@ -629,9 +629,7 @@ void AiFactory::AddDefaultNonCombatStrategies(Player* player, PlayerbotAI* const
             {
                 // nonCombatEngine->addStrategy("travel");
                 nonCombatEngine->addStrategy("rpg", false);
-            }
-            else
-            {
+            } else {
                 nonCombatEngine->addStrategy("move random", false);
             }
 
@@ -752,4 +750,15 @@ Engine* AiFactory::createDeadEngine(Player* player, PlayerbotAI* const facade, A
     AddDefaultDeadStrategies(player, facade, deadEngine);
     deadEngine->Init();
     return deadEngine;
+}
+
+uint8 AiFactory::GetPlayerSpecRole(Player* player)
+{
+    // Implement logic to determine the player's role based on their spec and gear
+    // Return BOT_ROLE_TANK, BOT_ROLE_HEALER, or BOT_ROLE_DPS
+}
+
+void AiFactory::SetPlayerSpecRole(Player* player, uint8 role)
+{
+    // Implement logic to set the player's talents and gear to match the desired role
 }

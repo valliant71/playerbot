@@ -89,6 +89,8 @@ private:
     Player* const master;
     PlayerBotErrorMap errors;
     time_t lastErrorTell;
+    std::map<ObjectGuid, uint32> m_botSummonTimers;
+    void UpdateSummonTimers(uint32 diff);
 };
 
 class PlayerbotsMgr

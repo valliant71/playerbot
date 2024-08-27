@@ -34,7 +34,7 @@ public:
     static std::string GetPlayerSpecName(Player* player);
     static uint8 GetPlayerSpecRole(Player* player);
 
-    // Add this line in the public section of the AiFactory class
+    // Update this line to match the definition in the .cpp file
     static uint8 GetPlayerSpecRole(Player* player);
 };
 

@@ -169,7 +169,6 @@ RandomPlayerbotMgr::RandomPlayerbotMgr() : PlayerbotHolder(), processTicks(0)
     BgCheckTimer = 0;
     LfgCheckTimer = 0;
     PlayersCheckTimer = 0;
-    m_checkBotPopulationTimer = 0;
 }
 
 RandomPlayerbotMgr::~RandomPlayerbotMgr() {}

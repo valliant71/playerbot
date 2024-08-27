@@ -33,6 +33,9 @@ public:
     static BotRoles GetPlayerRoles(Player* player);
     static std::string GetPlayerSpecName(Player* player);
     static uint8 GetPlayerSpecRole(Player* player);
+
+    // Add this line in the public section of the AiFactory class
+    static uint8 GetPlayerSpecRole(Player* player);
 };
 
 #endif

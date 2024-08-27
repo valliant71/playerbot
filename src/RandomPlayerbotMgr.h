@@ -151,7 +151,7 @@ public:
     void LoadBattleMastersCache();
     std::map<uint32, std::map<uint32, BattlegroundInfo>> BattlegroundData;
     std::map<uint32, std::map<uint32, std::map<TeamId, uint32>>> VisualBots;
-    std::map<uint32, std::map<uint32, std::map<uint32, uint32>>> Supporters;
+    std::map<uint32, std::map<uint32, uint32>>> Supporters;
     std::map<TeamId, std::vector<uint32>> LfgDungeons;
     void CheckBgQueue();
     void CheckLfgQueue();
@@ -204,6 +204,7 @@ private:
     std::list<uint32> currentBots;
     uint32 bgBotsCount;
     uint32 playersLevel;
+    uint32 m_checkBotPopulationTimer;
 };
 
 #define sRandomPlayerbotMgr RandomPlayerbotMgr::instance()

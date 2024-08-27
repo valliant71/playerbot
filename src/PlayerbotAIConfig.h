@@ -324,6 +324,8 @@ public:
 
     void loadWorldBuf(uint32 factionId, uint32 classId, uint32 minLevel, uint32 maxLevel);
     static std::vector<std::vector<uint32>> ParseTempTalentsOrder(uint32 cls, std::string temp_talents_order);
+
+    uint32 summonDelay;
 };
 
 #define sPlayerbotAIConfig PlayerbotAIConfig::instance()
